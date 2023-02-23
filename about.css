@@ -1,0 +1,118 @@
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --darkblue: #000c66;
+  --textcolor: #ffdbac;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+.db_image {
+  width: 100%;
+  height: 200px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  background: var(--darkblue);
+}
+
+.main-nav a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  color: var(--textcolor);
+}
+
+.main-nav a:hover {
+  background: var(--textcolor);
+  color: var(--darkblue);
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.advertisement {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  min-height: 200px;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
